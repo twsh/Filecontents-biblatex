@@ -33,7 +33,7 @@ def bibdesk(record):
 # For some reason URL fields are converted to 'link' fields
 def link_to_url(record):
     """
-    Turn 'link' fileds to 'url'.
+    Turn 'link' fields to 'url'.
 
     :param record: the record.
     :type record: dict
