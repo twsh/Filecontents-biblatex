@@ -6,7 +6,7 @@ import re
 import subprocess
 
 from bibtexparser.bparser import BibTexParser
-from bibtexparser.bwriter import to_bibtex
+from bibtexparser.bwriter import BibTexWriter
 from bibtexparser.customization import *
 
 
@@ -96,7 +96,7 @@ if __name__ == "__main__":
             )
             filecontents = (
                 '\\begin{filecontents}{\\jobname.bib}\n'
-                + to_bibtex(bibliography)
+                + BibTexWriter().write(bibliography)
                 + '\\end{filecontents}\n'
                 + '\\addbibresource{\\jobname.bib}\n'
             )
