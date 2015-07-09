@@ -80,6 +80,7 @@ if __name__ == "__main__":
         subprocess.check_call(
             [
                 'biber',
+                '--output-safechars',
                 '--output_format=bibtex',
                 '--output_resolve',
                 bcf
