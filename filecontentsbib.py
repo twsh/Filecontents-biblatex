@@ -7,7 +7,6 @@ import subprocess
 
 from bibtexparser.bparser import BibTexParser
 from bibtexparser.bwriter import BibTexWriter
-from bibtexparser.customization import *
 
 
 # bibtexparser customisations
